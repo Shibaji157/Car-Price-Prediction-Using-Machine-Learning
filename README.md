@@ -1,35 +1,45 @@
-# 🚗 Car Price Prediction using Machine Learning
+# 🚗 Car Price Prediction Using Machine Learning
 
 ## 📌 Project Overview
 
-This project predicts the selling price of a car using Machine Learning algorithms.
+This project predicts the selling price of cars using Machine Learning algorithms. Multiple regression models were trained and evaluated to identify the most accurate prediction model.
 
-The project includes:
-
-- Data Preprocessing
-- Feature Engineering
-- Exploratory Data Analysis
-- Model Training
-- Model Evaluation
-- Model Comparison
-- Model Saving
+The project includes complete data preprocessing, feature engineering, exploratory data analysis (EDA), model training, evaluation, and model saving.
 
 ---
 
-## Dataset
+## 🎯 Objective
 
-CarPrice_Assignment.csv
-
-Rows: 205
-
-Features: 26
-
-Target:
-- Price
+Develop an end-to-end Machine Learning pipeline capable of accurately predicting car prices based on vehicle specifications.
 
 ---
 
-## Machine Learning Models
+## 📂 Dataset
+
+Dataset: CarPrice_Assignment.csv
+
+Total Records: **205**
+
+Total Features: **26**
+
+Target Variable:
+
+Price
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Joblib
+
+---
+
+## 📊 Machine Learning Models
 
 - Linear Regression
 - Decision Tree Regressor
@@ -38,33 +48,26 @@ Target:
 
 ---
 
-## Best Model
+## 📈 Model Performance
 
-Random Forest Regressor
+| Model | R² Score |
+|--------|----------|
+| Linear Regression | 0.9097 |
+| Decision Tree | 0.9069 |
+| Gradient Boosting | 0.9246 |
+| **Random Forest** | **0.9595** |
 
-R² Score: **0.9595**
-
----
-
-## Evaluation Metrics
-
-MAE : 1248.12
-
-RMSE : 1786.98
-
-R² : 0.9595
+🏆 Best Model: **Random Forest**
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-CarPricePrediction/
+Car-Price-Prediction/
 │
 ├── data/
 ├── images/
-│   ├── eda/
-│   └── model_results/
 ├── models/
 ├── outputs/
 ├── src/
@@ -76,18 +79,51 @@ CarPricePrediction/
 
 ---
 
-## Technologies Used
+## ⚙️ Installation
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Joblib
+```bash
+git clone https://github.com/Shibaji157/Car-Price-Prediction-Using-Machine-Learning.git
+
+cd Car-Price-Prediction-Using-Machine-Learning
+
+pip install -r requirements.txt
+
+python main.py
+```
 
 ---
 
-## Author
+## 📊 Output
 
-Shibaji Biswas
+The project automatically:
+
+- Cleans the dataset
+- Performs Feature Engineering
+- Generates EDA graphs
+- Trains multiple ML models
+- Selects the best model
+- Saves evaluation metrics
+- Saves the trained model
+
+---
+
+## 📌 Future Improvements
+
+- Hyperparameter tuning
+- Streamlit Web Application
+- Real-time Price Prediction
+- Cross Validation
+- Feature Importance Analysis
+
+---
+
+## 👨‍💻 Author
+
+**Shibaji Biswas**
+
+B.Tech (Artificial Intelligence & Machine Learning)
+
+Chandigarh University
+
+GitHub:
+https://github.com/Shibaji157
