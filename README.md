@@ -1,34 +1,48 @@
-# 🚗 Car Price Prediction Using Machine Learning
+# 🚗 Car Price Prediction using Machine Learning
 
-## 📌 Project Overview
-
-This project predicts the selling price of cars using Machine Learning algorithms. Multiple regression models were trained and evaluated to identify the most accurate prediction model.
-
-The project includes complete data preprocessing, feature engineering, exploratory data analysis (EDA), model training, evaluation, and model saving.
+An end-to-end Machine Learning project that predicts the market price of a car based on its specifications. The project covers the complete ML workflow, from data preprocessing and feature engineering to model training, evaluation, and deployment through a Streamlit web application.
 
 ---
 
-## 🎯 Objective
+## 🌐 Live Demo
 
-Develop an end-to-end Machine Learning pipeline capable of accurately predicting car prices based on vehicle specifications.
+🔗 **Streamlit App:** https://car-price-prediction-using-machine-learning-csvuu8ehykvsnwqbtq.streamlit.app/
+
+📂 **GitHub Repository:** https://github.com/Shibaji157/Car-Price-Prediction-Using-Machine-Learning
+    **LinkedIn:** (https://www.linkedin.com/in/shibaji-biswas)
+---
+
+# 📌 Project Overview
+
+The objective of this project is to build a machine learning model capable of accurately predicting car prices using various vehicle specifications.
+
+The project includes:
+
+- Data Cleaning
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- Model Training
+- Model Comparison
+- Cross Validation
+- Model Evaluation
+- Feature Importance Analysis
+- Model Saving
+- Streamlit Web Application Deployment
 
 ---
 
-## 📂 Dataset
+# 📊 Dataset Information
 
-Dataset: CarPrice_Assignment.csv
+**Dataset:** Car Price Prediction Dataset
 
-Total Records: **205**
-
-Total Features: **26**
-
-Target Variable:
-
-Price
+- Total Records: **205**
+- Original Features: **26**
+- Engineered Features: **65**
+- Target Variable: **Price**
 
 ---
 
-## 🛠 Technologies Used
+# 🛠 Technologies Used
 
 - Python
 - Pandas
@@ -36,94 +50,221 @@ Price
 - Matplotlib
 - Scikit-learn
 - Joblib
+- Streamlit
+- Git
+- GitHub
 
 ---
 
-## 📊 Machine Learning Models
-
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
-
----
-
-## 📈 Model Performance
+# 🤖 Machine Learning Algorithms Compared
 
 | Model | R² Score |
 |--------|----------|
 | Linear Regression | 0.9097 |
 | Decision Tree | 0.9069 |
+| Random Forest | **0.9595** ✅ |
 | Gradient Boosting | 0.9246 |
-| **Random Forest** | **0.9595** |
-
-🏆 Best Model: **Random Forest**
 
 ---
 
-## 📁 Project Structure
+# 🏆 Best Performing Model
+
+**Random Forest Regressor**
+
+### Performance Metrics
+
+| Metric | Value |
+|---------|-------|
+| R² Score | **95.95%** |
+| MAE | **1248.12** |
+| RMSE | **1786.98** |
+
+---
+
+# 📈 Project Workflow
 
 ```
-Car-Price-Prediction/
+Dataset
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Exploratory Data Analysis
+      │
+      ▼
+Model Training
+      │
+      ▼
+Model Comparison
+      │
+      ▼
+Model Evaluation
+      │
+      ▼
+Model Saving
+      │
+      ▼
+Streamlit Deployment
+```
+
+---
+
+# 📂 Project Structure
+
+```
+Car-Price-Prediction-Using-Machine-Learning
 │
-├── data/
-├── images/
-├── models/
-├── outputs/
-├── src/
+├── app.py
 ├── main.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+│
+├── data/
+│   └── CarPrice_Assignment.csv
+│
+├── images/
+│   ├── feature_importance.png
+│   ├── prediction_plot.png
+│   └── eda/
+│
+├── models/
+│   └── best_model.pkl
+│
+├── outputs/
+│   ├── model_metrics.csv
+│   └── processed_dataset.csv
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   ├── eda.py
+│   ├── model_training.py
+│   ├── evaluation.py
+│   ├── feature_importance.py
+│   ├── model_saver.py
+│   └── prediction.py
+│
+└── test_prediction.py
 ```
 
 ---
 
-## ⚙️ Installation
+# 🚀 Features
+
+- Clean and modular project structure
+- Automatic data preprocessing
+- Feature engineering
+- Exploratory data analysis
+- Multiple regression models
+- Model comparison
+- Cross validation
+- Feature importance visualization
+- Model evaluation metrics
+- Model persistence using Joblib
+- Interactive Streamlit web application
+- Live prediction support
+
+---
+
+# 💻 Installation
+
+Clone the repository
 
 ```bash
 git clone https://github.com/Shibaji157/Car-Price-Prediction-Using-Machine-Learning.git
+```
 
+Move into the project directory
+
+```bash
 cd Car-Price-Prediction-Using-Machine-Learning
+```
 
+Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-python main.py
+Run the application
+
+```bash
+streamlit run app.py
 ```
 
 ---
 
-## 📊 Output
+# 📷 Application Screenshots
 
-The project automatically:
+## Home Page
 
-- Cleans the dataset
-- Performs Feature Engineering
-- Generates EDA graphs
-- Trains multiple ML models
-- Selects the best model
-- Saves evaluation metrics
-- Saves the trained model
+> Add screenshot here
 
 ---
 
-## 📌 Future Improvements
+## Prediction Interface
 
-- Hyperparameter tuning
-- Streamlit Web Application
-- Real-time Price Prediction
-- Cross Validation
-- Feature Importance Analysis
+> Add screenshot here
 
 ---
 
-## 👨‍💻 Author
+## Prediction Result
+
+> Add screenshot here
+
+---
+
+## Feature Importance
+
+> Add screenshot here
+
+---
+
+## Prediction vs Actual
+
+> Add screenshot here
+
+---
+
+# 📈 Future Improvements
+
+- Hyperparameter tuning using GridSearchCV
+- XGBoost implementation
+- LightGBM implementation
+- User authentication
+- Cloud database integration
+- Docker deployment
+- CI/CD pipeline
+- REST API using FastAPI
+
+---
+
+# 👨‍💻 Author
 
 **Shibaji Biswas**
 
-B.Tech (Artificial Intelligence & Machine Learning)
+B.Tech in Artificial Intelligence & Machine Learning
 
 Chandigarh University
 
 GitHub:
 https://github.com/Shibaji157
+
+LinkedIn:
+https://www.linkedin.com/in/shibaji-biswas
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+## 📜 License
+
+This project is developed for educational and portfolio purposes.
