@@ -5,6 +5,10 @@ Author : Shibaji Biswas
 Project : Car Price Prediction using Machine Learning
 """
 
+
+import os
+
+from src.feature_importance import plot_feature_importance
 from src.model_saver import save_model
 from src.evaluation import evaluate_model
 from src.preprocessing import (
@@ -47,18 +51,26 @@ def main():
     perform_eda(original_df)
 
     # Model Training
-    best_model, X_test, y_test, results = train_models(df)
-
+    best_model, X_train, X_test, y_test, results = train_models(df)
+    plot_feature_importance(best_model, X_train)
     # Model Evaluation
     evaluate_model(best_model, X_test, y_test)
 
     # Save Best Model
     save_model(best_model)
+    
 
     print("\n" + "=" * 60)
     print("PROCESSED DATASET (First 5 Rows)")
     print("=" * 60)
+    
+
+    os.makedirs("outputs", exist_ok=True)
+
+    df.to_csv("outputs/processed_dataset.csv", index=False)
     print(df.head())
+
+    print("\n✅ Processed dataset saved.")
 
     print("\n" + "=" * 60)
     print("MODEL COMPARISON RESULTS")
