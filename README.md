@@ -202,33 +202,36 @@ streamlit run app.py
 
 ## Home Page
 
-> Add screenshot here
+> ![Homepage](home.png)
 
 ---
 
 ## Prediction Interface
 
-> Add screenshot here
+> ![Prediction](price_distribution-1.png)
 
 ---
 
 ## Prediction Result
 
-> Add screenshot here
+> ![Prediction](price_distribution.png)
 
 ---
 
 ## Feature Importance
 
-> Add screenshot here
+> ![Feature Importance](feature_importance.png)
 
 ---
 
 ## Prediction vs Actual
 
-> Add screenshot here
+> ![Prediction vs Actual](actual_vs_predicted.png)
 
 ---
+## Model Results
+
+>![Model_Results](model_results.png)
 
 # 📈 Future Improvements
 
