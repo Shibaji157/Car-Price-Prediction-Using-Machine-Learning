@@ -9,7 +9,7 @@ An end-to-end Machine Learning project that predicts the market price of a car b
 🔗 **Streamlit App:** https://car-price-prediction-using-machine-learning-csvuu8ehykvsnwqbtq.streamlit.app/
 
 📂 **GitHub Repository:** https://github.com/Shibaji157/Car-Price-Prediction-Using-Machine-Learning
-    **LinkedIn:** (https://www.linkedin.com/in/shibaji-biswas)
+    
 ---
 
 # 📌 Project Overview
