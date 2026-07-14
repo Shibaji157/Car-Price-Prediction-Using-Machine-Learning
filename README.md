@@ -208,13 +208,13 @@ streamlit run app.py
 
 ## Prediction Interface
 
-> ![Prediction](price_distribution-1.png)
+> ![Prediction Interface](brand_price.png)
 
 ---
 
 ## Prediction Result
 
-> ![Prediction](price_distribution.png)
+> ![Prediction Result](price_distribution.png)
 
 ---
 
@@ -226,7 +226,7 @@ streamlit run app.py
 
 ## Prediction vs Actual
 
-> ![Prediction vs Actual](actual_vs_predicted.png)
+> ![Actual vs Prediction ](actual_vs_predicted.png)
 
 ---
 ## Model Results
